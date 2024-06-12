@@ -134,6 +134,7 @@
                 <div class="col-md-6 text-right">
                   <button
                     class="btn btn-primary"
+                    type="submit"
                     id="btnThem"
                     data-toggle="modal"
                     data-target="#myModal"
@@ -214,7 +215,7 @@
 
           <!-- Modal body -->
           <div class="modal-body">
-            <form role="form">
+            <form id="formQLSV" role="form">
               <div class="form-group">
                 <div class="input-group">
                   <div class="input-group-prepend">
@@ -364,7 +365,7 @@
 
           <!-- Modal footer -->
           <div class="modal-footer" id="modal-footer">
-            <button id="btnThemNV" type="button" class="btn btn-success">
+            <button id="btnThemNV" type="submit" class="btn btn-success">
               Thêm người dùng
             </button>
             <button id="btnCapNhat" type="button" class="btn btn-success">
@@ -409,5 +410,8 @@
         });
       });
     </script>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/sinhvien.js"></script>
   </body>
 </html>

@@ -8,5 +8,6 @@ class SinhVien {
     this.luongCB = "";
     this.chucvu = "";
     this.gioLam = "";
+    this.loaiNhanVien = "";
   }
 }

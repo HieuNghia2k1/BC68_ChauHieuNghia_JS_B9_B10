@@ -53,3 +53,27 @@ document.getElementById("formQLSV").onsubmit = function (event) {
   // Xóa toàn bộ dữ liệu trên form
   document.getElementById("formQLSV").reset();
 };
+
+// Hiển thị dữ liệu sinh viên lên giao diện
+function renderArrSinhVien() {
+  // B1: Tạo 1 vòng lặp duyệt các sinh viên có trong arr
+  let content = "";
+  for (let sinhVien of arrSinhVien) {
+    console.log(sinhVien);
+    let { tknv, name, email, datepicker, chucvu, luongCB, tongLuong, xepLoai } =
+      sinhVien;
+    content += ` 
+    <tr>
+      <td>${tknv}</td>
+      <td>${name}</td>
+      <td>${email}</td>
+      <td>${datepicker}</td>
+      <td>${chucvu}</td>
+      <td>${luongCB}</td>
+      <td>${tongLuong}</td>
+      <td>${xepLoai}</td>
+
+    </tr>
+    `;
+  }
+}

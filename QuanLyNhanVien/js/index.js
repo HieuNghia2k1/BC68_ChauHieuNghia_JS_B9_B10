@@ -70,10 +70,14 @@ function renderArrSinhVien() {
       <td>${datepicker}</td>
       <td>${chucvu}</td>
       <td>${luongCB}</td>
-      <td>${tongLuong}</td>
+      
       <td>${xepLoai}</td>
 
     </tr>
     `;
   }
+  // Thực hiện dom tới tbody và hiển thị dữ liệu
+  document.getElementById("tableDanhSach").innerHTML = content;
 }
+
+renderArrSinhVien();
